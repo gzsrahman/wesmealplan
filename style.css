@@ -1,66 +1,50 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #000000; /* Black background */
-    color: #FFFFFF; /* White text */
+    background-color: #f4f4f4;
     text-align: center;
     padding: 20px;
 }
 
 .container {
-    background-color: #FFFFFF; /* White background for container */
+    background-color: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.3); /* Softer shadow for contrast */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     max-width: 400px;
     margin: auto;
 }
 
 h1 {
-    font-size: 26px;
-    color: #C41E3A; /* Wesleyan red for headings */
+    font-size: 24px;
     margin-bottom: 20px;
-}
-
-p {
-    font-size: 18px;
-    margin-top: 10px;
 }
 
 label, input, button {
     display: block;
-    margin: 15px auto;
+    margin: 10px auto;
 }
 
 input {
     padding: 10px;
     width: 100%;
     max-width: 300px;
-    border: 1px solid #C41E3A; /* Red border for input */
-    border-radius: 5px;
 }
 
 button {
     padding: 10px 20px;
-    background-color: #C41E3A; /* Red button */
-    color: #FFFFFF; /* White text */
+    background-color: #4CAF50;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #b31c34; /* Darker red on hover */
+    background-color: #45a049;
 }
 
 #result {
     margin-top: 20px;
     font-size: 18px;
     font-weight: bold;
-    color: #C41E3A; /* Red text for result */
-}
-
-.logo {
-    width: 100px; /* Change this to control the size */
-    margin: 0 auto;
-    display: block; /* Centers the logo */
 }
