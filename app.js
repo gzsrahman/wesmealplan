@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const countdownElement = document.getElementById('countdown');
-    const form = document.getElementById('diningForm');
+    const form = document.getElementById('pointsForm');
     const resultElement = document.getElementById('result');
     
     // Function to calculate days until the next key date
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
             resultElement.textContent = 'Please enter a valid amount of points.';
         } else {
             const pointsPerDay = (points / daysLeft).toFixed(2);
-            resultElement.textContent = `You can spend $${pointsPerDay} per day for the rest of the semester.`;
+            resultElement.textContent = `You can spend ${pointsPerDay} points per day for the rest of the semester.`;
         }
     });
 });
