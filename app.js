@@ -26,10 +26,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Event listener for form submission
     form.addEventListener('submit', function(event) {
-        event.preventDefault();
-        
+        event.preventDefault(); // Prevent the page from refreshing
+
         const points = parseFloat(document.getElementById('points').value);
-        
+
         if (isNaN(points) || points < 0) {
             resultElement.textContent = 'Please enter a valid amount of points.';
         } else {
