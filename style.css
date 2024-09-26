@@ -32,6 +32,8 @@ input {
     padding: 10px;
     width: 100%;
     max-width: 300px;
+    box-sizing: border-box; /* Ensure padding is inside the width */
+    margin: 0; /* Eliminate extra margin that could push it off-center */
 }
 
 button {
