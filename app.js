@@ -28,13 +28,13 @@ document.addEventListener('DOMContentLoaded', function() {
     form.addEventListener('submit', function(event) {
         event.preventDefault();
         
-        const diningDollars = parseFloat(document.getElementById('diningDollars').value);
+        const points = parseFloat(document.getElementById('points').value);
         
-        if (isNaN(diningDollars) || diningDollars < 0) {
-            resultElement.textContent = 'Please enter a valid amount of dining dollars.';
+        if (isNaN(points) || points < 0) {
+            resultElement.textContent = 'Please enter a valid amount of points.';
         } else {
-            const dollarsPerDay = (diningDollars / daysLeft).toFixed(2);
-            resultElement.textContent = `You can spend $${dollarsPerDay} per day for the rest of the semester.`;
+            const pointsPerDay = (points / daysLeft).toFixed(2);
+            resultElement.textContent = `You can spend $${pointsPerDay} per day for the rest of the semester.`;
         }
     });
 });
