@@ -1,50 +1,65 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #000000; /* Black background */
+    color: #FFFFFF; /* White text */
     text-align: center;
     padding: 20px;
 }
 
 .container {
-    background-color: white;
+    background-color: #FFFFFF; /* White background for container */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3); /* Softer shadow for contrast */
     max-width: 400px;
     margin: auto;
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 26px;
+    color: #C41E3A; /* Wesleyan red for headings */
     margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 10px;
 }
 
 label, input, button {
     display: block;
-    margin: 10px auto;
+    margin: 15px auto;
 }
 
 input {
     padding: 10px;
     width: 100%;
     max-width: 300px;
+    border: 1px solid #C41E3A; /* Red border for input */
+    border-radius: 5px;
 }
 
 button {
     padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #C41E3A; /* Red button */
+    color: #FFFFFF; /* White text */
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #b31c34; /* Darker red on hover */
 }
 
 #result {
     margin-top: 20px;
     font-size: 18px;
     font-weight: bold;
+    color: #C41E3A; /* Red text for result */
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
 }
