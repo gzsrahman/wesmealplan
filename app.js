@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const countdownElement = document.getElementById('countdown');
-    const form = document.getElementById('pointsForm');
+    const form = document.getElementById('diningForm');
     const resultElement = document.getElementById('result');
     
     // Function to calculate days until the next key date
@@ -26,15 +26,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Event listener for form submission
     form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the page from refreshing
-
-        const points = parseFloat(document.getElementById('points').value);
-
-        if (isNaN(points) || points < 0) {
-            resultElement.textContent = 'Please enter a valid amount of points.';
+        event.preventDefault();
+        
+        const diningpoints = parseFloat(document.getElementById('diningpoints').value);
+        
+        if (isNaN(diningpoints) || diningpoints < 0) {
+            resultElement.textContent = 'Please enter a valid amount of dining points.';
         } else {
-            const pointsPerDay = (points / daysLeft).toFixed(2);
-            resultElement.textContent = `You can spend ${pointsPerDay} points per day for the rest of the semester.`;
+            const pointsPerDay = (diningpoints / daysLeft).toFixed(2);
+            resultElement.textContent = `You can spend $${pointsPerDay} per day for the rest of the semester.`;
         }
     });
 });
