@@ -60,6 +60,7 @@ button:hover {
 }
 
 .logo {
-    width: 150px;
-    margin-bottom: 20px;
+    width: 100px; /* Change this to control the size */
+    margin: 0 auto;
+    display: block; /* Centers the logo */
 }
